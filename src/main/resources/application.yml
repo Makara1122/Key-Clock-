@@ -1,0 +1,22 @@
+spring:
+
+
+  application:
+    name: Keyclock
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/myrealm
+
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:free
+    username: system
+    password: qwer
+
+
+server:
+  port: 8081
+
+
